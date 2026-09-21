@@ -53,6 +53,8 @@
 
 <img src="docs/donate_wechat_qr.png" width="220" alt="微信打赏收款码">
 
+**关于收费**：Alpha 阶段将始终保持免费；不排除将来推出 Beta 或正式版后，部分功能收费的可能。
+
 纯粹的打赏——不问、不跳、不弹窗。打赏不会带来额外功能、优先支持或任何授权。
 
 ### 免责声明
@@ -109,6 +111,8 @@ No other device or OS version has been verified.
 ### Donate
 
 <img src="docs/donate_wechat_qr.png" width="220" alt="WeChat tip QR code">
+
+**On pricing**: free throughout the Alpha stage. Charging for some features after a future Beta or stable release is **not ruled out**.
 
 A plain tip — no prompts, no popups. Donating grants no extra features, priority support, or license.
 
