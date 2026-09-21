@@ -4,7 +4,7 @@
 
 非官方项目 · 仅供学习与个人使用
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-PolyForm_Noncommercial_1.0.0-orange.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android%2017%20%C2%B7%20HyperOS%204-green.svg)](#开发环境)
 [![Device](https://img.shields.io/badge/device-Xiaomi%2018%20Fold-orange.svg)](#开发环境)
 
@@ -65,7 +65,16 @@
 
 ### License
 
-[Apache License 2.0](LICENSE)。可自由使用、修改、分发（含商用），只需保留版权与许可声明。
+[PolyForm Noncommercial License 1.0.0](LICENSE) —— **仅限非商业用途**。
+
+- ✅ **免费使用**：个人学习、研究、实验、爱好项目，以及非营利组织／学校／公共研究机构。
+- ⛔ **需另行授权**：任何商业用途 —— 包括销售、作为付费产品或服务的一部分、SaaS／托管服务、
+  企业内部生产环境使用、基于本项目的收费咨询或支持 —— **均须事先取得作者的书面商业许可**。
+- 📧 需要商业授权，请通过 [Issues](https://github.com/213DEE/XiaomiDuo/issues) 联系作者。
+
+> Required Notice: Copyright © 2026 213DEE (https://github.com/213DEE/XiaomiDuo)
+
+⚠️ 本项目是「**源码公开**（source-available）」，**不是** OSI 认可的开源协议 —— 因为它限制商业使用。
 
 ---
 
@@ -124,4 +133,15 @@ A plain tip — no prompts, no popups. Donating grants no extra features, priori
 
 ### License
 
-[Apache License 2.0](LICENSE). Free to use, modify and redistribute, including commercially — just keep the copyright and license notices.
+[PolyForm Noncommercial License 1.0.0](LICENSE) — **noncommercial use only**.
+
+- ✅ **Free to use** for personal study, research, experimentation, hobby projects,
+  and by nonprofits, schools and public research organizations.
+- ⛔ **Separate license required** for *any* commercial use — including selling it, shipping it inside a paid
+  product or service, offering it as SaaS / hosted service, production use inside a company, or paid
+  consulting/support built on it. Written commercial permission from the author is required **in advance**.
+- 📧 For commercial licensing, reach the author via [Issues](https://github.com/213DEE/XiaomiDuo/issues).
+
+> Required Notice: Copyright © 2026 213DEE (https://github.com/213DEE/XiaomiDuo)
+
+⚠️ This project is **source-available**, *not* an OSI-approved open source license — it restricts commercial use.
