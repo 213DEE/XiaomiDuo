@@ -4,7 +4,7 @@
 
 非官方项目 · 仅供学习与个人使用
 
-[![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android%2017%20%C2%B7%20HyperOS%204-green.svg)](#开发环境)
 [![Device](https://img.shields.io/badge/device-Xiaomi%2018%20Fold-orange.svg)](#开发环境)
 
@@ -65,7 +65,7 @@
 
 ### License
 
-[GNU AGPL-3.0](LICENSE)。改了这个项目并通过网络提供服务，你需要公开你的源码。
+[Apache License 2.0](LICENSE)。可自由使用、修改、分发（含商用），只需保留版权与许可声明。
 
 ---
 
@@ -124,4 +124,4 @@ A plain tip — no prompts, no popups. Donating grants no extra features, priori
 
 ### License
 
-[GNU AGPL-3.0](LICENSE). If you modify this project and offer it over a network, you must publish your source.
+[Apache License 2.0](LICENSE). Free to use, modify and redistribute, including commercially — just keep the copyright and license notices.
