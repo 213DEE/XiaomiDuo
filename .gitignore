@@ -1,0 +1,48 @@
+# ── 内部数据（工作区记忆、探针缓存）────────────────────────────
+.workbuddy/
+*.log
+
+# ── 大体积素材：逆向分析产物与工具链（本地重建，不入库）──────────
+apk_analysis/
+tools/android-sdk/
+tools/_dex/
+tools/fw/
+tools/probe_out/
+tools/ref_src/
+tools/_lspd/
+tools/_lsposed_stubs/
+tools/*/build/
+tools/*/out/
+
+# ── 二进制与镜像：体积大且可再生 ────────────────────────────────
+*.apk
+*.apks
+*.xapk
+*.jar
+*.dex
+*.odex
+*.vdex
+*.oat
+*.so
+*.img
+*.bin
+*.zip
+*.tar
+*.tar.gz
+
+# ── 构建输出 ────────────────────────────────────────────────────
+build/
+out/
+.gradle/
+.kotlin/
+*.class
+*.keystore
+*.jks
+
+# ── 编辑器与系统 ────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
