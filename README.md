@@ -1,14 +1,12 @@
 # XiaomiDuo
 
-**让小米 18 Fold 尽可能接近 iPhone Duo**
+**致力于让小米 18 Fold 的 UI、操作、动画接近 iPhone Duo**
 
-改造小米 18 Fold 的**系统外壳**——合上时外屏呈「左 9:16 内容区 ＋ 右栏」，开合过程中两块屏同时点亮，右侧栏提供操作区与状态信息。
-
-**非官方项目** · 不写系统分区 · 运行期 hook ＋ 叠加层 · 只用软重启
+非官方项目 · 仅供学习与个人使用
 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android%2017%20%C2%B7%20HyperOS%204-green.svg)](#开发环境)
-[![Framework](https://img.shields.io/badge/framework-KernelSU%20%2B%20LSPosed-orange.svg)](#开发环境)
+[![Device](https://img.shields.io/badge/device-Xiaomi%2018%20Fold-orange.svg)](#开发环境)
 
 [中文](#中文) · [English](#english)
 
@@ -18,21 +16,20 @@
 
 ### 项目简介
 
-本项目致力于**让小米 18 Fold 实现尽可能接近 iPhone Duo 的效果**。
+**XiaomiDuo 致力于让小米 18 Fold 的 UI、操作、动画接近 iPhone Duo。**
 
-### 改造范围
+> ⚠️ **早期开发阶段。** 具体实现手段与可行边界**仍在验证中** —— 本文不写死任何技术方案。
+> 已实测的结论会标 **✅ 实测**，仍属推断的会标 **🔎 推断**，不去猜没验证过的事。
 
-| 代号 | 内容 | 状态 |
+### 关注方向
+
+| 方向 | 内容 | 状态 |
 |---|---|---|
-| **S1** 合上态布局 | 外屏划分为 左 9:16 内容区（963 × 1712）＋ 右栏（205 × 1712） | 部分验证 |
-| **S2** 开合动画 | 开合过程中两块屏同时点亮，右栏内容随之变化 | 未开始 |
-| **S3** 右侧栏 | 右侧操作栏 ＋ 状态栏，取代被掏空的系统状态栏 | 部分验证 |
+| **S1** 开合动画 | 展开 / 合上过程中的过渡动画 | 未开始（当前主线） |
+| **S2** 合上态布局 | 合上时外屏的画面分区 | 部分验证 |
+| **S3** 右侧栏 | 右侧的操作区与状态信息 | 部分验证 |
 
-### 现状
-
-⚠️ 项目处于**早期开发阶段**，三块内容中仅 S1 / S3 有部分真机验证，S2 尚未开始。
-
-开发过程按分层知识库记录在 `知识库/`（按条目 ID 检索，`INDEX.md` 为总目）。
+> 编号按**执行优先级**排列。设计过程按分层知识库记录在 `知识库/`（按条目 ID 检索，`INDEX.md` 为总目）。
 
 ### 开发环境
 
@@ -51,8 +48,6 @@
 | Hook 框架 | **LSPosed** `v2.2.0 (7854)` · libxposed API **102** |
 
 其他机型 / 系统版本未验证。
-
-> ⚠️ **只支持软重启。** 本项目依赖的 root 是 **LKM 临时 root，硬重启即失效**（`adb reboot` / 关机 / Recovery / OTA 均会使其丢失）。恢复需先重新提权，**再软重启一次**模块才会生效。
 
 ### 捐赠
 
@@ -76,23 +71,22 @@
 
 ### About
 
-**XiaomiDuo aims to make the Xiaomi 18 Fold behave as close to an iPhone Duo as possible.**
+**XiaomiDuo aims to bring the Xiaomi 18 Fold's UI, interactions and animations close to the iPhone Duo.**
 
-It reshapes the device's **system shell**: in the folded state the cover screen is split into a left 9:16 content area (963 × 1712) plus a right column (205 × 1712); while unfolding, both panels stay lit and the right column follows.
+> ⚠️ **Early development.** The implementation approach and its limits are **still being verified** —
+> this document deliberately commits to no technical specifics. Verified findings are marked **✅ tested**,
+> inferences are marked **🔎 inferred**.
 
-### Scope
+### Focus areas
 
-| ID | Item | Status |
+| Area | Description | Status |
 |---|---|---|
-| **S1** Folded layout | Cover screen split into left 9:16 area (963 × 1712) and right column (205 × 1712) | Partially verified |
-| **S2** Fold animation | Both panels stay lit across the fold; right column follows | Not started |
-| **S3** Right column | Right-side control bar + status column, replacing the emptied system status bar | Partially verified |
+| **S1** Fold animation | Transition animation while unfolding / folding | Not started (current focus) |
+| **S2** Folded layout | On-screen partitioning of the cover display when folded | Partially verified |
+| **S3** Right column | Control area and status info on the right side | Partially verified |
 
-### Status
-
-⚠️ **Early development.** Of the three items above, only S1 / S3 have partial on-device verification. S2 has not been started.
-
-Design notes live in `知识库/` as a layered knowledge base (entry-ID indexed; `INDEX.md` is the table of contents).
+> IDs are ordered by execution priority. Design notes live in `知识库/` as a layered knowledge base
+> (entry-ID indexed; `INDEX.md` is the table of contents).
 
 ### Test environment
 
@@ -111,8 +105,6 @@ All values below were read from the device via `getprop` / `uname`.
 | Hook framework | **LSPosed** `v2.2.0 (7854)` · libxposed API **102** |
 
 No other device or OS version has been verified.
-
-> ⚠️ **Soft reboot only.** This project relies on an **LKM temporary root, which is lost on a hard reboot** (`adb reboot`, power off, Recovery, OTA all destroy it). After re-escalating, you must **soft reboot once more** for modules to load.
 
 ### Donate
 
